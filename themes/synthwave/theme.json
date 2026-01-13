@@ -1,0 +1,36 @@
+{
+  "name": "synthwave",
+  "description": "80s retrowave aesthetic with deep purples, hot pinks, and electric cyans",
+  "author": "themer-up",
+  "created": "2025-01-13",
+  "colors": {
+    "background": "#1a1a2e",
+    "foreground": "#eaeaea",
+    "cursor": "#ff79c6",
+    "selection": "#44475a",
+    "accent1": "#ff79c6",
+    "accent2": "#8be9fd",
+    "accent3": "#bd93f9",
+    "black": "#21222c",
+    "red": "#ff5555",
+    "green": "#50fa7b",
+    "yellow": "#f1fa8c",
+    "blue": "#bd93f9",
+    "magenta": "#ff79c6",
+    "cyan": "#8be9fd",
+    "white": "#f8f8f2",
+    "brightBlack": "#6272a4",
+    "brightRed": "#ff6e6e",
+    "brightGreen": "#69ff94",
+    "brightYellow": "#ffffa5",
+    "brightBlue": "#d6acff",
+    "brightMagenta": "#ff92df",
+    "brightCyan": "#a4ffff",
+    "brightWhite": "#ffffff"
+  },
+  "fonts": {
+    "terminal": "MesloLGS NF",
+    "editor": "JetBrains Mono",
+    "size": 14
+  }
+}

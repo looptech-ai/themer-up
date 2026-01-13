@@ -1,0 +1,316 @@
+{
+  "Profiles": [
+    {
+      "Name": "Synthwave Base",
+      "Guid": "synthwave-base-001",
+      "Dynamic Profile Parent Name": "Default",
+      "Custom Directory": "Recycle",
+      "Use Non-ASCII Font": false,
+      "Normal Font": "MesloLGS-NF-Regular 14",
+      "Non Ascii Font": "MesloLGS-NF-Regular 14",
+      "Horizontal Spacing": 1,
+      "Vertical Spacing": 1.1,
+      "Use Bold Font": true,
+      "Use Bright Bold": true,
+      "Use Italic Font": true,
+      "Ambiguous Double Width": false,
+      "ASCII Anti Aliased": true,
+      "Non-ASCII Anti Aliased": true,
+      "Blend": 0.15,
+      "Blur": true,
+      "Blur Radius": 8,
+      "Transparency": 0.08,
+      "Background Color": {
+        "Red Component": 0.050980392156862744,
+        "Green Component": 0.00784313725490196,
+        "Blue Component": 0.12941176470588237,
+        "Alpha Component": 1,
+        "Color Space": "sRGB"
+      },
+      "Foreground Color": {
+        "Red Component": 0.8980392156862745,
+        "Green Component": 0.8392156862745098,
+        "Blue Component": 0.9647058823529412,
+        "Alpha Component": 1,
+        "Color Space": "sRGB"
+      },
+      "Bold Color": {
+        "Red Component": 1.0,
+        "Green Component": 0.16470588235294117,
+        "Blue Component": 0.4274509803921569,
+        "Alpha Component": 1,
+        "Color Space": "sRGB"
+      },
+      "Cursor Color": {
+        "Red Component": 0.8,
+        "Green Component": 0.2,
+        "Blue Component": 1.0,
+        "Alpha Component": 1,
+        "Color Space": "sRGB"
+      },
+      "Cursor Text Color": {
+        "Red Component": 0.050980392156862744,
+        "Green Component": 0.00784313725490196,
+        "Blue Component": 0.12941176470588237,
+        "Alpha Component": 1,
+        "Color Space": "sRGB"
+      },
+      "Selection Color": {
+        "Red Component": 0.4,
+        "Green Component": 0.1,
+        "Blue Component": 0.6,
+        "Alpha Component": 1,
+        "Color Space": "sRGB"
+      },
+      "Selected Text Color": {
+        "Red Component": 1.0,
+        "Green Component": 1.0,
+        "Blue Component": 1.0,
+        "Alpha Component": 1,
+        "Color Space": "sRGB"
+      },
+      "Ansi 0 Color": {
+        "Red Component": 0.10196078431372549,
+        "Green Component": 0.10196078431372549,
+        "Blue Component": 0.1803921568627451,
+        "Alpha Component": 1,
+        "Color Space": "sRGB"
+      },
+      "Ansi 1 Color": {
+        "Red Component": 1.0,
+        "Green Component": 0.16470588235294117,
+        "Blue Component": 0.4274509803921569,
+        "Alpha Component": 1,
+        "Color Space": "sRGB"
+      },
+      "Ansi 2 Color": {
+        "Red Component": 0.0196078431372549,
+        "Green Component": 0.8509803921568627,
+        "Blue Component": 0.9098039215686274,
+        "Alpha Component": 1,
+        "Color Space": "sRGB"
+      },
+      "Ansi 3 Color": {
+        "Red Component": 0.9803921568627451,
+        "Green Component": 0.9019607843137255,
+        "Blue Component": 0.3568627450980392,
+        "Alpha Component": 1,
+        "Color Space": "sRGB"
+      },
+      "Ansi 4 Color": {
+        "Red Component": 0.615686274509804,
+        "Green Component": 0.30196078431372547,
+        "Blue Component": 0.8666666666666667,
+        "Alpha Component": 1,
+        "Color Space": "sRGB"
+      },
+      "Ansi 5 Color": {
+        "Red Component": 1.0,
+        "Green Component": 0.0,
+        "Blue Component": 1.0,
+        "Alpha Component": 1,
+        "Color Space": "sRGB"
+      },
+      "Ansi 6 Color": {
+        "Red Component": 0.0,
+        "Green Component": 1.0,
+        "Blue Component": 0.9764705882352941,
+        "Alpha Component": 1,
+        "Color Space": "sRGB"
+      },
+      "Ansi 7 Color": {
+        "Red Component": 0.8980392156862745,
+        "Green Component": 0.8392156862745098,
+        "Blue Component": 0.9647058823529412,
+        "Alpha Component": 1,
+        "Color Space": "sRGB"
+      },
+      "Ansi 8 Color": {
+        "Red Component": 0.3803921568627451,
+        "Green Component": 0.3568627450980392,
+        "Blue Component": 0.5019607843137255,
+        "Alpha Component": 1,
+        "Color Space": "sRGB"
+      },
+      "Ansi 9 Color": {
+        "Red Component": 1.0,
+        "Green Component": 0.4,
+        "Blue Component": 0.6,
+        "Alpha Component": 1,
+        "Color Space": "sRGB"
+      },
+      "Ansi 10 Color": {
+        "Red Component": 0.4,
+        "Green Component": 1.0,
+        "Blue Component": 0.9,
+        "Alpha Component": 1,
+        "Color Space": "sRGB"
+      },
+      "Ansi 11 Color": {
+        "Red Component": 1.0,
+        "Green Component": 0.9490196078431372,
+        "Blue Component": 0.5490196078431373,
+        "Alpha Component": 1,
+        "Color Space": "sRGB"
+      },
+      "Ansi 12 Color": {
+        "Red Component": 0.7803921568627451,
+        "Green Component": 0.49019607843137253,
+        "Blue Component": 1.0,
+        "Alpha Component": 1,
+        "Color Space": "sRGB"
+      },
+      "Ansi 13 Color": {
+        "Red Component": 1.0,
+        "Green Component": 0.4,
+        "Blue Component": 1.0,
+        "Alpha Component": 1,
+        "Color Space": "sRGB"
+      },
+      "Ansi 14 Color": {
+        "Red Component": 0.4,
+        "Green Component": 1.0,
+        "Blue Component": 1.0,
+        "Alpha Component": 1,
+        "Color Space": "sRGB"
+      },
+      "Ansi 15 Color": {
+        "Red Component": 1.0,
+        "Green Component": 1.0,
+        "Blue Component": 1.0,
+        "Alpha Component": 1,
+        "Color Space": "sRGB"
+      },
+      "Link Color": {
+        "Red Component": 0.0196078431372549,
+        "Green Component": 0.8509803921568627,
+        "Blue Component": 0.9098039215686274,
+        "Alpha Component": 1,
+        "Color Space": "sRGB"
+      },
+      "Badge Color": {
+        "Red Component": 1.0,
+        "Green Component": 0.16470588235294117,
+        "Blue Component": 0.4274509803921569,
+        "Alpha Component": 0.5,
+        "Color Space": "sRGB"
+      },
+      "Cursor Guide Color": {
+        "Red Component": 0.615686274509804,
+        "Green Component": 0.30196078431372547,
+        "Blue Component": 0.8666666666666667,
+        "Alpha Component": 0.25,
+        "Color Space": "sRGB"
+      }
+    },
+    {
+      "Name": "Claude Code",
+      "Guid": "claude-code-synthwave-001",
+      "Dynamic Profile Parent Name": "Synthwave Base",
+      "Badge Text": "CLAUDE",
+      "Tags": ["claude", "ai", "development"],
+      "Initial Text": "",
+      "Title Components": 2,
+      "Custom Tab Title": "Claude Code",
+      "Rows": 40,
+      "Columns": 140,
+      "Scrollback Lines": 10000,
+      "Unlimited Scrollback": false,
+      "Background Color": {
+        "Red Component": 0.050980392156862744,
+        "Green Component": 0.00784313725490196,
+        "Blue Component": 0.12941176470588237,
+        "Alpha Component": 1,
+        "Color Space": "sRGB"
+      },
+      "Tab Color": {
+        "Red Component": 0.615686274509804,
+        "Green Component": 0.30196078431372547,
+        "Blue Component": 0.8666666666666667,
+        "Alpha Component": 1,
+        "Color Space": "sRGB"
+      },
+      "Use Tab Color": true,
+      "Cursor Type": 2,
+      "Blinking Cursor": true
+    },
+    {
+      "Name": "ClaudeCodeUI",
+      "Guid": "claude-code-ui-synthwave-001",
+      "Dynamic Profile Parent Name": "Synthwave Base",
+      "Badge Text": "UI",
+      "Tags": ["claude", "ui", "gui"],
+      "Initial Text": "",
+      "Title Components": 2,
+      "Custom Tab Title": "Claude UI",
+      "Rows": 35,
+      "Columns": 120,
+      "Scrollback Lines": 5000,
+      "Background Color": {
+        "Red Component": 0.07058823529411765,
+        "Green Component": 0.0196078431372549,
+        "Blue Component": 0.1607843137254902,
+        "Alpha Component": 1,
+        "Color Space": "sRGB"
+      },
+      "Tab Color": {
+        "Red Component": 1.0,
+        "Green Component": 0.0,
+        "Blue Component": 1.0,
+        "Alpha Component": 1,
+        "Color Space": "sRGB"
+      },
+      "Use Tab Color": true,
+      "Cursor Type": 1,
+      "Blinking Cursor": false
+    },
+    {
+      "Name": "Automaker",
+      "Guid": "automaker-synthwave-001",
+      "Dynamic Profile Parent Name": "Synthwave Base",
+      "Badge Text": "AUTO",
+      "Tags": ["automaker", "automation", "ai"],
+      "Initial Text": "",
+      "Title Components": 2,
+      "Custom Tab Title": "Automaker",
+      "Rows": 45,
+      "Columns": 160,
+      "Scrollback Lines": 15000,
+      "Background Color": {
+        "Red Component": 0.03529411764705882,
+        "Green Component": 0.0,
+        "Blue Component": 0.10980392156862745,
+        "Alpha Component": 1,
+        "Color Space": "sRGB"
+      },
+      "Tab Color": {
+        "Red Component": 0.0196078431372549,
+        "Green Component": 0.8509803921568627,
+        "Blue Component": 0.9098039215686274,
+        "Alpha Component": 1,
+        "Color Space": "sRGB"
+      },
+      "Use Tab Color": true,
+      "Cursor Type": 0,
+      "Blinking Cursor": true
+    },
+    {
+      "Name": "Development",
+      "Guid": "dev-synthwave-001",
+      "Dynamic Profile Parent Name": "Synthwave Base",
+      "Badge Text": "DEV",
+      "Tags": ["development", "coding"],
+      "Rows": 40,
+      "Columns": 140,
+      "Scrollback Lines": 10000,
+      "Tab Color": {
+        "Red Component": 0.9803921568627451,
+        "Green Component": 0.9019607843137255,
+        "Blue Component": 0.3568627450980392,
+        "Alpha Component": 1,
+        "Color Space": "sRGB"
+      },
+      "Use Tab Color": true
+    }
+  ]
+}

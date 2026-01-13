@@ -1,0 +1,46 @@
+# Synthwave AI Development Workflow
+# Run with: mprocs --config ~/.config/mprocs/claude.yaml
+# Or alias: mp-claude
+
+procs:
+  # Tab 1: Main Claude Code session
+  claude-main:
+    cmd: ["claude"]
+    cwd: "~/work/claude-up-flow"
+    env:
+      CLAUDE_CODE_SESSION: "main"
+
+  # Tab 2: Claude Up Flow development
+  claude-up-flow:
+    cmd: ["npm", "run", "tauri", "dev"]
+    cwd: "~/work/claude-up-flow"
+    stop: "SIGTERM"
+
+  # Tab 3: Claude Code UI (Web Interface)
+  claude-ui:
+    cmd: ["claude-code-ui"]
+    cwd: "~"
+
+  # Tab 4: Automaker (AI Dev Studio)
+  automaker:
+    cmd: ["npm", "run", "dev:web"]
+    cwd: "~/dev/automaker"
+    env:
+      AUTOMAKER_SESSION: "1"
+
+  # Tab 5: Fork session for parallel tasks
+  claude-fork:
+    cmd: ["claude", "--new"]
+    cwd: "~/work/claude-up-flow"
+    env:
+      CLAUDE_CODE_SESSION: "fork"
+
+  # Logs viewer
+  logs:
+    shell: "tail -f ~/.claude/logs/*.log 2>/dev/null || echo 'Waiting for logs...'"
+    cwd: "~"
+
+  # Git status watcher (optional)
+  git-watch:
+    shell: "watch -n 5 'cd ~/work/claude-up-flow && git status -s 2>/dev/null || echo \"Not a git repo yet\"'"
+    cwd: "~"
