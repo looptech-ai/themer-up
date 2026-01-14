@@ -69,9 +69,9 @@ cd ~/dev/themer-up
 - [x] iTerm2 (Dynamic Profiles)
 - [x] Powerlevel10k (Color overrides)
 - [x] mprocs (Multi-process configs)
-- [ ] VS Code (Terminal colors)
-- [ ] Vim/Neovim
-- [ ] tmux
+- [x] VS Code (Terminal + editor colors)
+- [x] Vim/Neovim (Full colorscheme with TreeSitter support)
+- [x] tmux (Status bar + pane styling)
 
 ## Project Structure
 
