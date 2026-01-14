@@ -9,3 +9,10 @@
 
 # Local Claude settings (keep CLAUDE.md, ignore local settings)
 .claude/settings.local.json
+
+# Auto-generated Claude context files in subdirectories
+**/CLAUDE.md
+!.claude/CLAUDE.md
+
+# Firebase
+firebase-debug.log
