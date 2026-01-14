@@ -16,7 +16,6 @@ NC='\033[0m'
 
 # Parse arguments
 PARALLEL=false
-COVERAGE=false
 FAST=false
 VERBOSE=false
 
@@ -24,10 +23,6 @@ while [[ $# -gt 0 ]]; do
     case $1 in
         -p|--parallel)
             PARALLEL=true
-            shift
-            ;;
-        -c|--coverage)
-            COVERAGE=true
             shift
             ;;
         -f|--fast)
@@ -116,9 +111,10 @@ echo ""
 echo -e "${CYAN}Stage 2: Unit Tests${NC}"
 echo "────────────────────────────────────────"
 
-BATS_OPTS=""
+# Build bats options based on flags
+bats_opts="--tap"
 if $VERBOSE; then
-    BATS_OPTS="--verbose-run"
+    bats_opts="--tap --verbose-run"
 fi
 
 unit_tests=(
@@ -129,7 +125,7 @@ unit_tests=(
 
 if $PARALLEL && command -v parallel &> /dev/null; then
     echo "  Running in parallel mode..."
-    printf '%s\n' "${unit_tests[@]}" | parallel -j 3 "bats {} --tap" 2>&1 | while read -r line; do
+    printf '%s\n' "${unit_tests[@]}" | parallel -j 3 "bats {} $bats_opts" 2>&1 | while read -r line; do
         echo "    $line"
     done
 else
@@ -137,7 +133,8 @@ else
         if [[ -f "$test_file" ]]; then
             test_name=$(basename "$test_file" .bats)
             echo -n "  $test_name... "
-            if bats "$test_file" --tap > /tmp/bats_output 2>&1; then
+            # shellcheck disable=SC2086
+            if bats "$test_file" $bats_opts > /tmp/bats_output 2>&1; then
                 passed=$(grep -c "^ok" /tmp/bats_output || echo 0)
                 echo -e "${GREEN}PASS${NC} ($passed tests)"
             else
@@ -163,7 +160,8 @@ if ! $FAST; then
 
     if [[ -f "$TESTS_DIR/integration/theme_workflow.bats" ]]; then
         echo -n "  theme_workflow... "
-        if bats "$TESTS_DIR/integration/theme_workflow.bats" --tap > /tmp/bats_output 2>&1; then
+        # shellcheck disable=SC2086
+        if bats "$TESTS_DIR/integration/theme_workflow.bats" $bats_opts > /tmp/bats_output 2>&1; then
             passed=$(grep -c "^ok" /tmp/bats_output || echo 0)
             echo -e "${GREEN}PASS${NC} ($passed tests)"
         else
