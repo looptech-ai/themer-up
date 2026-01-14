@@ -1,7 +1,9 @@
 #!/bin/bash
 # Backup current theme configs before applying new theme
 
-BACKUP_DIR="$HOME/.themer-up-backup/$(date +%Y%m%d_%H%M%S)"
+# Support custom backup location via environment variable
+BACKUP_BASE="${THEMER_BACKUP_DIR:-$HOME/.themer-up-backup}"
+BACKUP_DIR="${BACKUP_BASE}/$(date +%Y%m%d_%H%M%S)"
 mkdir -p "$BACKUP_DIR"
 
 echo "Backing up to: $BACKUP_DIR"
@@ -43,6 +45,6 @@ if [ -f "$HOME/.tmux.conf" ]; then
 fi
 
 # Keep only last 5 backups
-ls -dt "$HOME/.themer-up-backup"/*/ 2>/dev/null | tail -n +6 | xargs rm -rf 2>/dev/null || true
+ls -dt "${BACKUP_BASE}"/*/ 2>/dev/null | tail -n +6 | xargs rm -rf 2>/dev/null || true
 
 echo "Backup complete."

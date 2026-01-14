@@ -3,7 +3,8 @@
 
 set -e
 
-THEMER_DIR="$HOME/dev/themer-up"
+# Allow override via environment variable for testing and custom installs
+THEMER_DIR="${THEMER_DIR:-$HOME/dev/themer-up}"
 THEME_NAME="${1:-synthwave}"
 THEME_DIR="$THEMER_DIR/themes/$THEME_NAME"
 
