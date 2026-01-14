@@ -1,7 +1,9 @@
 #!/bin/bash
 # Restore from the most recent backup
 
-BACKUP_DIR=$(ls -dt "$HOME/.themer-up-backup"/*/ 2>/dev/null | head -1)
+# Support custom backup location via environment variable
+BACKUP_BASE="${THEMER_BACKUP_DIR:-$HOME/.themer-up-backup}"
+BACKUP_DIR=$(ls -dt "${BACKUP_BASE}"/*/ 2>/dev/null | head -1)
 
 if [ -z "$BACKUP_DIR" ]; then
     echo "No backups found."

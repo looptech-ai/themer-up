@@ -1,0 +1,18 @@
+# ShellCheck configuration for themer-up
+# https://www.shellcheck.net/wiki/
+
+# Set severity to warning (ignore style/info suggestions)
+# Style issues (SC2250, SC2292) are valid suggestions but not errors
+severity=warning
+
+# Exclude warnings that don't apply to our use case
+# SC2312: Consider invoking this command separately (we handle exit codes)
+# SC2012: Use find instead of ls (our use case is controlled)
+# SC2129: Consider using grouped redirects (readability preference)
+exclude=SC2312,SC2012,SC2129
+
+# Set default shell dialect
+shell=bash
+
+# External sources (for sourced files)
+external-sources=true
